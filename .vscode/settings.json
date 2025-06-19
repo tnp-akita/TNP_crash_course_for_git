@@ -1,0 +1,28 @@
+{
+  "markdown.marp.html": "all",
+  "markdown.marp.themes": [
+    "./themes/base.css"
+  ],
+  // このプロジェクトでは半角に統一
+  "japanese-proofreading.textlint.丸かっこ（）": false,
+  // ツール名などの固有名詞は半角スペースを入れることとするため
+  "japanese-proofreading.textlint.全角文字と半角文字の間": false,
+  // 「: 」を例外とするため
+  "japanese-proofreading.textlint.かっこ類と隣接する文字の間のスペースの有無": false,
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "other": "on"
+    },
+    "editor.snippetSuggestions": "top",
+    "editor.suggest.showKeywords": false,
+    "editor.suggest.showWords": false
+  },
+  "markdownlint.config": {
+    // Marp: HTML を有効にするため
+    "MD033": false,
+    // Marp: style を一番上に定義するため
+    "MD041": false
+  },
+  // 長いコードによる不具合防止のため
+  "markdown.preview.scrollEditorWithPreview": false
+}
