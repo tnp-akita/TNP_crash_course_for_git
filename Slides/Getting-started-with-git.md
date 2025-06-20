@@ -13,7 +13,7 @@ marp: true
 3. 作業を実行します
 4. 作業が終わったら対象のファイルを add して commit します
 5. リモートから pull します
-6. rebase か merge の適切な手法でローカルを更新しますu
+6. rebase か merge の適切な手法でローカルを更新します
 7. push します
 
 ---
