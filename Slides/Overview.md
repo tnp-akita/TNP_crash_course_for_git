@@ -270,3 +270,48 @@ git push origin main
 ```
 
 ---
+
+## Remote の確認
+
+リモートリポジトリの設定を見たい場合、以下のコマンドで確認できます
+
+```bash
+git remote -v
+```
+
+```plaintext
+origin  https://github.com/NitCelcius/TNP-GitHub-Intro.git (fetch)
+origin  https://github.com/NitCelcius/TNP-GitHub-Intro.git (push)
+```
+
+- `origin` というリモートには `https://github.com/NitCelcius/TNP-GitHub-Intro.git` が設定されているようです
+
+---
+
+## Remote の修正
+
+もしリモートリポジトリのURLを変更する必要がある場合は、[Remote の確認](#remote-の確認) で現在の設定を確認しましょう
+修正は以下のコマンドで行います
+
+```bash
+git remote set-url [リモート名] [URL]
+```
+
+> [!TIP]
+> `git remote add` (リモートの追加) や `git remote remove` (リモートの削除)、`git remote rename` (リモートの名前変更) も同様に使えます。
+> `git remote -?` で用法を確認してね
+
+---
+
+### (メモ) Remote の修正例
+
+```bash
+git remote set-url origin https://github.com/tnp-akita/TNP_crash_course_for_git
+```
+
+- `--push` スイッチを指定するとプッシュ先だけを変更します
+
+```plaintext
+origin  https://github.com/tnp-akita/TNP_crash_course_for_git (fetch)
+origin  https://github.com/tnp-akita/TNP_crash_course_for_git (push)
+```
