@@ -222,6 +222,38 @@ git pull origin main
 
 ---
 
+### プルの出力
+
+```plaintext
+From https://github.com/tnp-akita/TNP-GitHub-Intro
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+```
+
+---
+
+### プル の動作
+
+> [!TIP]
+> `pull` は `fetch` + `merge` と表現されます
+
+```bash
+git pull origin main
+```
+
+- リモート `origin` にある `main` をローカルに取り込む
+
+これは、以下のように書き換えられます
+
+```bash
+git fetch origin
+git merge origin/main main
+```
+
+- `fetch` でリモートの状況を `origin/` 以下に反映して、その後 `merge` で `origin/main` を `main` にマージする
+
+---
+
 ## プッシュ (push)
 
 - コミットをリモートリポジトリに反映します
