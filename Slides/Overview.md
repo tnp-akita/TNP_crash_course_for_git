@@ -38,10 +38,9 @@
 
 ---
 
-# Git の基本概念
-- 図を出す
+## Git の基本概念
 
-- Commit, Merge, Branch が見えればいいかな
+- [ ] 図を出す、Commit, Merge, Branch が見えればいいかな
 
 ---
 
