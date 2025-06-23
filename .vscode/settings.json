@@ -26,5 +26,9 @@
     "MD041": false
   },
   // 長いコードによる不具合防止のため
-  "markdown.preview.scrollEditorWithPreview": false
+  "markdown.preview.scrollEditorWithPreview": false,
+  "cSpell.words": [
+    "marp",
+    "reflog"
+  ]
 }
