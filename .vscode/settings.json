@@ -18,6 +18,8 @@
     "editor.suggest.showWords": false
   },
   "markdownlint.config": {
+    // Marp: セクションごとに h1 を入れるため
+    "MD025": false,
     // Marp: HTML を有効にするため
     "MD033": false,
     // Marp: style を一番上に定義するため
