@@ -2,6 +2,12 @@
 marp: true
 ---
 
+<style>
+@import 'default';
+/* Bootstrap */
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+</style>
+
 # TNP 初年次講義 [Git]
 
 (ppt版が必要かわからんので git でアウトライン管理)
