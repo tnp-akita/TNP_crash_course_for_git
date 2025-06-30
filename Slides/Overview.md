@@ -124,10 +124,38 @@ git commit -m [コミットメッセージ]
 
 ---
 
+### コミットの詳細を見つつコミットするには
 
 ```bash
 git commit
 ```
+
+- `-m` オプションを指定しないで実行すると、テキストエディタが開きます
+  - デフォルト設定では Vim が開くことがあります
+  - 下に `["COMMIT_EDITMSG" 11L, 231B]` など記載されている場合は [Vimの使い方解説記事(@alpaca-honke氏)](https://qiita.com/alpaca-honke/items/b7a682f6ee4aedada544#%E4%BD%BF%E3%81%84%E6%96%B9%E3%81%93%E3%81%AE%E8%A8%98%E4%BA%8B%E3%81%AE%E5%91%BD) を見て Vim と仲良くなりましょう
+  - どうしても Vim が好きになれない場合: `core.editor を変更する`
+
+---
+
+```plaintext
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#       new file:   hello.txt
+```
+
+- コミット対象のブランチ、対象のファイルが表示されます
+- 最初の行には概要 (**コミットメッセージ**)、後の行には詳細を書く風習があります
+- `#` のない行に何か書き、保存してエディタを閉じるとコミットを実行します
+
+> [!TIP]
+> ここで何も書かずにエディタを閉じると、コミットせず元の画面に戻ります。
 
 ---
 
