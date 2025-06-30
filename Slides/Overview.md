@@ -457,3 +457,53 @@ git remote set-url origin https://github.com/tnp-akita/TNP_crash_course_for_git
 origin  https://github.com/tnp-akita/TNP_crash_course_for_git (fetch)
 origin  https://github.com/tnp-akita/TNP_crash_course_for_git (push)
 ```
+
+---
+
+## 作成者(Author)を変更する
+
+何も設定せず `git commit` を行うと以下のメッセージが出ることがあります。
+
+```bash
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+```
+
+メッセージに従い、メールアドレスとユーザー名を設定しましょう。
+
+---
+
+> [!NOTE]
+> 以下のコマンドで入力した内容は、一度でもコミットを行うと、該当のリポジトリにアクセスできる全員に表示されます。
+>
+> なお、これを非公開にしたい場合は、GitHub でコミット専用のメールアドレスを使うこともできます。[コミットメールアドレスを設定する - GitHub Docs](https://docs.github.com/ja/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address#about-commit-email-addresses:~:text=%5BKeep%20my%20email%20address%20private%5D(%E3%83%A1%E3%83%BC%E3%83%AB%20%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E9%9D%9E%E5%85%AC%E9%96%8B%E3%81%AB%E3%81%99%E3%82%8B)%20%E3%82%92%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%BE%E3%81%99) を参照してください。
+
+メールアドレスは以下のように設定します。
+
+```bash
+git config --global user.email [メールアドレス]
+```
+
+ユーザー名は以下のように設定します。
+
+```bash
+git config --global user.name [作成者名]
+```
+
+---
+
+作成者名は、単に先ほどのコマンドの引数を書かないことで確認できます。
+
+```bash
+$ git config --global user.email
+nitcelcius@nitcelcius.me
+
+$ git config --global user.name
+NitCelcius
+```
