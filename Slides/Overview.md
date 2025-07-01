@@ -8,6 +8,13 @@ marp: true
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
 </style>
 
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+
 # TNP 初年次講義 [Git]
 
 (ppt版が必要かわからんので git でアウトライン管理)
@@ -66,7 +73,7 @@ marp: true
 
 # Git の基本概念
 
-![Git のコミットツリー。mainブランチから複数のブランチが分岐し、それらは特定の箇所で合流している](/images/Multi-fast-forward-merge.svg)
+![Git のコミットツリー。mainブランチから複数のブランチが分岐し、それらは特定の箇所で合流している / center](/images/Multi-fast-forward-merge.svg)
 
 Git では変更履歴が記録され、上のような図で表されます
 
@@ -114,7 +121,7 @@ git status
   - ステージングされているファイルのみを履歴に追加します
   - **コミットメッセージ** を指定して、いままでの作業を説明する必要があります
 
-![Commit は変更を保存するノード](/images/Commit-emphasized.svg)
+![Commit は変更を保存するノード / center](/images/Commit-emphasized.svg)
 
 ```bash
 git commit -m [コミットメッセージ]
@@ -188,7 +195,6 @@ git checkout -c add-title-screen
 ブランチを切り替えてからはそのブランチにしかコミットができません。もし、間違ったブランチで作業をしてしまった場合は以下のコマンドを使うと、作業内容を残したままブランチを切り替えることができます。```git switch -c <ブランチ名>```
 
 ---
-
 
 ## マージ (merge)
 
@@ -273,6 +279,8 @@ Bさんの変更 @ <code>fix-document</code> ブランチ:
 と書き直して、`add` & `commit` しなおすと競合が解決し、マージが完了します。
 
 - これを「マージコミット」と呼びます
+
+![右端がマージコミット / center](/images/Fast-forward-merge.svg)
 
 ---
 
@@ -507,3 +515,7 @@ nitcelcius@nitcelcius.me
 $ git config --global user.name
 NitCelcius
 ```
+
+---
+
+### リポジトリごとに作成者を変える
