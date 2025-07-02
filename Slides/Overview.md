@@ -15,7 +15,7 @@ img[alt~="center"] {
 }
 </style>
 
-# TNP 初年次講義 [Git]
+# TNP 初年次講義 (Git)
 
 (ppt版が必要かわからんので git でアウトライン管理)
 
