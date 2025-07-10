@@ -242,7 +242,7 @@ git commit
 # Initial commit
 #
 # Changes to be committed:
-#       new file:   hello.txt
+#       new file:   working.txt
 ```
 
 - コミット対象のブランチ、対象のファイルが表示されます
