@@ -565,3 +565,10 @@ NitCelcius
 ---
 
 ### リポジトリごとに作成者を変える
+
+複数のアカウントを使っているなどの理由で、特定のリポジトリだけの設定や作成者を変更したい場合は `git config` の `--local` オプションを使います。
+
+```bash
+git config --local user.email [このリポジトリで使いたいメールアドレス]
+git config --local user.name [このリポジトリで使いたい作成者名]
+```
