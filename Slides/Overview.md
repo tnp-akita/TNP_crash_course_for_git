@@ -143,6 +143,66 @@ git status
 
 ---
 
+### status の例
+
+- `working.txt` があるとします。`commit` の準備をするためステージングしましょう
+
+```bash
+> git status
+```
+
+```plaintext
+On branch feat/getting-started
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        working.txt
+        unused.txt
+```
+
+---
+
+```bash
+> git add working.txt
+```
+
+- `git add` を使って `working.txt` をステージングします
+  - このまま commit すると、最後にステージングした状態でコミットされます
+
+```plaintext
+On branch feat/getting-started
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   working.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        unused.txt
+```
+
+---
+
+もし間違ったファイルをステージングした場合は `git restore --staged` で戻せます
+
+```bash
+> git restore --staged working.txt
+```
+
+```plaintext
+On branch feat/getting-started
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        working.txt
+        unused.txt
+```
+
+> [!WARNING]
+> `--staged` をつけないで実行すると `working.txt` の中身が最後のコミットに戻ります。一度でもコミットしたことのあるファイルを扱うときは注意！
+
+---
+
 ## コミット (commit)
 
 - コミット: 「作業を保存」します
