@@ -499,8 +499,6 @@ git remote set-url [リモート名] [URL]
 
 ---
 
-### (メモ) Remote の修正例
-
 ```bash
 git remote set-url origin https://github.com/tnp-akita/TNP_crash_course_for_git
 ```
