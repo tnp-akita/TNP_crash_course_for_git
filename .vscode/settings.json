@@ -30,5 +30,6 @@
   "cSpell.words": [
     "marp",
     "reflog"
-  ]
+  ],
+  "markdown.validate.enabled": true
 }
